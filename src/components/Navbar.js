@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 //import logo from "../assets/hourglass.png";
 
-const pages = ['Me.', 'Research Interest.', 'Talks & Conferences', 'Publications', 'Books'];
+const pages = ['Me', 'Research Interest', 'Talks & Conferences', 'Publications', 'Books', 'Contact'];
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -106,21 +106,5 @@ const Navbar = () => {
         </AppBar>
     );
 };
-
-
-/*const Navbar = () => {
-    return (
-        <div class="nav-wrapper">
-
-            <a className="navlink" href="/">Me.</a>
-            <a className="navlink" href="/Research_Interest">Research Interest.</a>
-            <a className="navlink" href="/Talks_Conferences">Talks & Conferences</a>
-            <a className="navlink" href="/Publications">Publications</a>
-            <a className="navlink" href="/Books">Books</a>
-
-        </div>
-
-    );
-};*/
 
 export default Navbar;

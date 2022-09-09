@@ -11,15 +11,19 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 //import logo from "../assets/hourglass.png";
+import { Link } from "react-router-dom";
 
-const pages = ['Me', 'Research Interest', 'Talks & Conferences', 'Publications', 'Books', 'Contact'];
+
+const pages = ['Me', 'ResearchInterest', 'TalksConferences', 'Publications', 'Books', 'Contact']
 
 const Navbar = () => {
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
+
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
@@ -82,7 +86,13 @@ const Navbar = () => {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Typography textAlign="center">
+                                        <Link
+                                            style={{ textDecoration: "none", color: "white" }}
+                                            to={`/${page}`}>
+                                            {page}
+                                        </Link>
+                                    </Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -92,18 +102,22 @@ const Navbar = () => {
                     <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
-                            <Button
+                            < Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
-                                {page}
+                                <Link
+                                    style={{ textDecoration: "none", color: "white" }}
+                                    to={`/${page}`}>
+                                    {page}
+                                </Link>
                             </Button>
                         ))}
                     </Box>
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 };
 

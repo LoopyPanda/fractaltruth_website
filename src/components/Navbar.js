@@ -88,7 +88,7 @@ const Navbar = () => {
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">
                                         <Link
-                                            style={{ textDecoration: "none", color: "white" }}
+                                            style={{ textDecoration: "none", color: "black" }}
                                             to={`/${page}`}>
                                             {page}
                                         </Link>

@@ -8,6 +8,8 @@ import "../style/Profile.css";
 import profilepic from "../assets/Satyaphoto.jpg";
 //import { Zoom } from 'react-reveal';
 import Fade from 'react-reveal/Fade';
+//import Me from "./Me";
+import { Link } from 'react-router-dom';
 
 
 
@@ -54,7 +56,7 @@ const Profile = () => {
                             </p>
                         </Item>
                         <Item>
-                            <Button component="a" href="#as-link">
+                            <Button component={Link} to="/Me" variant="outlined">
                                 Click to know me better...
                             </Button>
                         </Item>

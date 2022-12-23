@@ -32,6 +32,7 @@ const divStyle = {
     }
 };
 
+
 const Profile = () => {
 
     return (
@@ -51,7 +52,9 @@ const Profile = () => {
                         <Item><h1>Satya.</h1></Item>
                         <Item>
                             <p>
-                                I am enthusiastic Physicist And I love physics because it has a huge scope which enables me to understand how the universe works on visible universe (93 billion light years) down to a small fraction of a proton's diameter.
+                                An enthusiastic engineer and a passionate physicist - I am the package that smart things come in.
+                                My interests scale from solving sudoku to solving the intricate working of our Universe - ranging from the very small to the very large.
+                                Like dunking a basketball, I have my eye on pushing the boundary of our knowledge about the world around us.
                             </p>
                         </Item>
                         <Item>

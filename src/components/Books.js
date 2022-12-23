@@ -3,6 +3,8 @@ import React from "react";
 const Books = () => {
     return (
         <div className="App">
+            <p>These are (obviously) not the books that I have written.   <br />Among the multitude of books that exist on each topic, the below mentioned ones are those that I had a chance to read and gain knowledge from.  <br /> Some I have used them as university textbooks,   <br />while some I have only referred to for further conceptual clarity.
+                <br /> I believe the list can also be taken as an advice for anyone out these who wishes to learn Physics.</p>
             <p>
                 <h1>Popular science:</h1>
                 1. "A Brief History of Time" by Stephen Hawking<br />
@@ -55,7 +57,8 @@ const Books = () => {
 
 
                 <h1>Astrophysics:</h1>
-                1. "Astrophysics for Physicists" by Arnab Rai Choudhuri<br />
+                1. "Extragalactic Astronomy & Cosmology" by Peter Schneider<br />
+                2. "Astrophysics for Physicists" by Arnab Rai Choudhuri<br />
 
 
                 <h1>Cosmology:</h1>

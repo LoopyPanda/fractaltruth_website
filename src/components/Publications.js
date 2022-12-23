@@ -9,7 +9,7 @@ const Publications = () => {
 
             <h1>April 2017</h1>
 
-            <p>"S. Dhandhukiya and H. Sahlmann, “Towards Hartle-Hawking states for con- nection variables”, Phys. Rev. D 95, 084047 (2017) [arXiv:1608.07971[gr-qc]]" </p>
+            <p>"S. Dhandhukiya and H. Sahlmann, “Towards Hartle-Hawking states for connection variables”, Phys. Rev. D 95, 084047 (2017) [arXiv:1608.07971[gr-qc]]" </p>
 
             <Button href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.95.084047" variant="outlined">
                 To The Publication

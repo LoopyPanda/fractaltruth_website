@@ -1,5 +1,17 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { experimentalStyled as styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+
+const Item = styled(Paper)(({ theme }) => ({
+    padding: theme.spacing(10),
+    textAlign: 'justify',
+    WebkitTextFillColor: '#FFFFFF',
+    backgroundColor: "transparent",
+    //color: theme.palette.text.secondary,
+}));
 
 export default function Contact() {
     const form = useRef();
@@ -17,28 +29,44 @@ export default function Contact() {
     };
 
     return (
-        <div className="container">
-            <form ref={form} onSubmit={sendEmail}>
-                <div className="row pt-5 mx-auto">
-                    <div className="col-8 form-group mx-auto">
-                        <label>Name : </label><input type="text" className="form-control" placeholder="Name" name="name" />
-                    </div>
-                    <div className="col-8 form-group pt-2 mx-auto">
-                        <label>Email : </label><input type="email" className="form-control" placeholder="Email Address" name="email" />
-                    </div>
-                    <div className="col-8 form-group pt-2 mx-auto">
-                        <label>Subject : </label><input type="text" className="form-control" placeholder="Subject" name="subject" />
-                    </div>
-                    <div className="col-8 form-group pt-2 mx-auto">
-                        <label>Message : </label><textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
-                    </div>
-                    <div className="col-8 pt-3 mx-auto">
-                        <input type="submit" className="btn btn-info" value="Send Message"></input>
-                    </div>
-                </div>
-            </form>
-        </div>
 
+        <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={{ xs: 8 }} columns={{ xs: 4 }}>
+                <Grid item sm={6}>
+                    {Array.from(Array(1)).map((_, index) => (
+                        <Grid item xs={6} key={index}>
+                            <Item>Interested in reaching out to me?<br />
+                                Then feel free to drop me a message and<br /> I will get back to you the soonest !!!
+                            </Item>
+                        </Grid>
+                    ))}
+                </Grid>
+
+                <Grid item sm={6} >
+                    <div className="container">
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="row pt-5 mx-auto">
+                                <div className="col-8 form-group mx-auto">
+                                    <label>Name : </label><input type="text" className="form-control" placeholder="Name" name="name" />
+                                </div>
+                                <div className="col-8 form-group pt-2 mx-auto">
+                                    <label>Email : </label><input type="email" className="form-control" placeholder="Email Address" name="email" />
+                                </div>
+                                <div className="col-8 form-group pt-2 mx-auto">
+                                    <label>Subject : </label><input type="text" className="form-control" placeholder="Subject" name="subject" />
+                                </div>
+                                <div className="col-8 form-group pt-2 mx-auto">
+                                    <label>Message : </label><textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                                </div>
+                                <div className="col-8 pt-3 mx-auto">
+                                    <input type="submit" className="btn btn-info" value="Send Message"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </Grid>
+            </Grid>
+        </Box>
     );
 };
 /*This code is useful for Node emailer 

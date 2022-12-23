@@ -5,25 +5,13 @@ const ResearchInterest = () => {
         <div className="App">
             <p>
 
-                <h1>Extragalactic Astronomy & Astrophysics</h1>
+                I believe that a physicist, or any scientist for that matter, will at some point in their research career need to, if necessary, step out of the comfort zone and look for solutions to a problem in any place possible. Keeping this spirt in my heart and mind, my research interests are rather broad. From among those, I am most interested in:
 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                1) Cosmology and Galaxy evolution
+                2) Blackholes and Active Galactic Nuclei
+                3) Non-linear Dynamics
 
-
-                <h1>Cosmology</h1>
-
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
-
-                <h1>Nonlinear dynamics</h1>
-
-
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                These interests are not just for theoretical study. I am also interested in their experimental, phenomenological and observational aspects.
 
             </p>
         </div>

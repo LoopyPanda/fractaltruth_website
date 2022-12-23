@@ -17,7 +17,7 @@ div.paragraph {
 }
 
 img {
-  width: 500px;
+  max-width: 100%;
   height: auto;
   background-position: 50% 50%;
   background-size: contain;

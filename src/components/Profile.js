@@ -51,8 +51,7 @@ const Profile = () => {
                         <Item><h1>Satya.</h1></Item>
                         <Item>
                             <p>
-                                An enthusiastic Physicist Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.hzfdgasvcavchjvkjsnsdjvg.
+                                I am enthusiastic Physicist And I love physics because it has a huge scope which enables me to understand how the universe works on visible universe (93 billion light years) down to a small fraction of a proton's diameter.
                             </p>
                         </Item>
                         <Item>

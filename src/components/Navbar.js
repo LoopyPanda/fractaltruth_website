@@ -9,9 +9,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-//import logo from "../assets/hourglass.png";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import "../style/Navbar.css";
 
 
 const pages = ['Me', 'ResearchInterest', 'TalksConferences', 'Publications', 'Books', 'Contact']
@@ -34,13 +34,13 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: '#121212' }}>
 
             <Container maxWidth="xl">
+
                 <Toolbar disableGutters>
-                    {/* <img src={logo} alt="logo" id="img" className="logo" /> */}
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
+
+                    <a href="/"><img src={logo} alt="logo" id="img" className="logo" sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /></a>
+
+                    {/*for adding a textlogo 
+                    <Typography variant="h6" noWrap component="a" href="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -49,23 +49,11 @@ const Navbar = () => {
                             letterSpacing: '.3rem',
                             color: 'white',
                             textDecoration: 'none',
-                        }}
-                    >
-                        Satya
-                    </Typography>
+                        }}>
+                        FACTRALTRUTH
+                    </Typography>*/}
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-
                         <Menu
                             id="menu-appbar"
                             anchorEl={anchorElNav}
@@ -99,8 +87,8 @@ const Navbar = () => {
                     </Box>
 
 
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
+                    <Box justifyContent="right" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             < Button
                                 key={page}
@@ -114,7 +102,21 @@ const Navbar = () => {
                                 </Link>
                             </Button>
                         ))}
+
                     </Box>
+
+                    <IconButton
+                        marginLeft='auto'
+                        size="large"
+                        aria-label="account of current user"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        onClick={handleOpenNavMenu}
+                        color="inherit"
+                    >
+                        <MenuIcon />
+                    </IconButton>
+
                 </Toolbar>
             </Container>
         </AppBar >
@@ -122,3 +124,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

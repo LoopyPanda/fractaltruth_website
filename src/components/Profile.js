@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import MouseIcon from '@mui/icons-material/Mouse';
 import "../style/Profile.css";
 import profilepic from "../assets/Satyaphoto.jpg";
 //import { Zoom } from 'react-reveal';
@@ -48,9 +49,9 @@ const Profile = () => {
 
                 <Grid item xs={4}>
                     <Fade bottom>
-                        <Item><h3>Hello, it's me</h3></Item>
-                        <Item><h1>Satya.</h1></Item>
                         <Item>
+                            <h3>Hello, it's me</h3>
+                            <h1>Satya.</h1>
                             <p>
                                 An enthusiastic engineer and a passionate physicist - I am the package that smart things come in.
                                 My interests scale from solving sudoku to solving the intricate working of our Universe - ranging from the very small to the very large.
@@ -58,7 +59,12 @@ const Profile = () => {
                             </p>
                         </Item>
                         <Item>
-                            <Button component={Link} to="/Me" variant="outlined">
+                            <Button component={Link} to="/Me" variant="contained" startIcon={<MouseIcon />} sx={{
+                                backgroundColor: "#000000",
+                                color: "#FFFFFF",
+                                "&:hover": { backgroundColor: "#c0c0c0" }
+                                //"&:disabled": { backgroundColor: "#FFFFFF" }
+                            }} >
                                 Click to know me better...
                             </Button>
                         </Item>
@@ -66,7 +72,7 @@ const Profile = () => {
                 </Grid>
             </Grid>
 
-        </Box>
+        </Box >
     );
 };
 

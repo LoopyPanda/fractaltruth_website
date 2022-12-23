@@ -1,6 +1,11 @@
 img {
-  max-width: 20%;
+  max-width: auto;
   height: auto;
   left: 0px;
   right: 0px;
+}
+
+.logo {
+  height: 5vmin;
+  pointer-events: none;
 }

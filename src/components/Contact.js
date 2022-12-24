@@ -4,6 +4,7 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(10),
@@ -35,9 +36,11 @@ export default function Contact() {
                 <Grid item sm={6}>
                     {Array.from(Array(1)).map((_, index) => (
                         <Grid item xs={6} key={index}>
-                            <Item>Interested in reaching out to me?<br />
-                                Then feel free to drop me a message and<br /> I will get back to you the soonest !!!
-                            </Item>
+                            <Typography align="justify" variant="body1" padding={5} margin={1}>
+                                <Item>Interested in reaching out to me?<br />
+                                    Then feel free to drop me a message and<br /> I will get back to you the soonest !!!
+                                </Item>
+                            </Typography>
                         </Grid>
                     ))}
                 </Grid>

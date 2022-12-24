@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import logo from "../assets/logo.png";
+import logo from "../assets/text.png";
 import { Link } from "react-router-dom";
 import "../style/Navbar.css";
 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
                     <a href="/"><img src={logo} alt="logo" id="img" className="logo" sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /></a>
 
-                    {/*for adding a textlogo 
+                    {/*for adding a text as a logo 
                     <Typography variant="h6" noWrap component="a" href="/"
                         sx={{
                             mr: 2,
@@ -102,10 +102,9 @@ const Navbar = () => {
                                 </Link>
                             </Button>
                         ))}
-
                     </Box>
 
-                    <IconButton
+                    <IconButton sx={{ display: { xs: 'block', md: 'none' } }}
                         marginLeft='auto'
                         size="large"
                         aria-label="account of current user"

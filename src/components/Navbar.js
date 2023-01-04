@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
 
-        <AppBar position="static" style={{ background: '#121212' }}>
+        <AppBar position="static" component="nav" style={{ background: '#121212' }} >
 
             <Container maxWidth="xl">
 

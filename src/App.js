@@ -12,6 +12,7 @@ import Publications from './components/Publications';
 import TalksConferences from './components/TalksConferences';
 import ResearchInterest from './components/ResearchInterest ';
 import Footer from "./components/Footer";
+//import "./components/Annimation.js";
 
 const darkTheme = createTheme({
   palette: {
@@ -23,6 +24,7 @@ function App() {
   return (
 
     <div className="App">
+
 
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />

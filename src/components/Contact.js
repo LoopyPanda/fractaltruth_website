@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(10),
+
     textAlign: 'justify',
     WebkitTextFillColor: '#FFFFFF',
     backgroundColor: "transparent",

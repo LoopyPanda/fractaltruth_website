@@ -8,6 +8,7 @@ import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
 
+
     textAlign: 'justify',
     WebkitTextFillColor: '#FFFFFF',
     backgroundColor: "transparent",

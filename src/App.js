@@ -16,7 +16,7 @@ import { Box } from "@mui/material";
 //import "./components/Annimation.js";
 import background from "./assets/Background.jpg";
 import Paper from '@mui/material/Paper';
-
+import { Helmet } from "react-helmet";
 
 const darkTheme = createTheme({
   palette: {
@@ -42,6 +42,11 @@ function App() {
     <Paper style={styles.paperContainer}>
 
       <Box className="App">
+
+        <Helmet>
+          <title>TheFractralTruth</title>
+          <meta name="description" content="TheFractralTruth" />
+        </Helmet>
 
 
         <ThemeProvider theme={darkTheme}>
